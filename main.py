@@ -1,5 +1,6 @@
 # -*- encoding:utf-8 -*-
 # auth:tomato
+
 import ipaddress
 
 
@@ -104,9 +105,9 @@ def main():
             print(f"[-] \033[31m{private_ip}\033[0m (内网)")
 
     if matched_ips:
-        print(f"\n对比已完成，总共匹配了 {len(matched_ips)} 个IP:")
-        for idx, ip in enumerate(matched_ips, start=1):
-            print(f"[-] 黑名单中的 \033[31m{ip}\033[0m 在白名单中 - 累计匹配数: {idx}")
+        print(f"\n对比已完成，总共匹配了 {len(matched_ips)} 个IP在白名单中:")
+        for ip in matched_ips:
+            print(f"[-] \033[31m{ip}\033[0m ")
     else:
         print("\n对比已完成，没有匹配的IP。")
 
