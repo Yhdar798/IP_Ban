@@ -1,4 +1,4 @@
-# IP_Blocking
+# IP_ban
 监控岗常用功能
 - IP去重
 - 判断是否为内网IP
